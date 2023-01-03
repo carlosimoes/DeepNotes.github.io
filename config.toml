@@ -1,10 +1,44 @@
-baseURL = 'http://carlosimoes.github.io/DeepNotes.github.io/'
-languageCode = 'en-us'
-title = 'My Deep Notes'
-theme = 'PaperMod'
+# theme.toml template for a Hugo theme
+# See http://carlosimoes.github.io/DeepNotes.github.io/ for an example
 
+name = "PaperMod"
+description = "Welcome to my blog on deep learning!
+Deep learning is a subfield of machine learning that is inspired by the structure and function of the brain, specifically the neural networks that make up the brain. It involves training artificial neural networks on a large dataset, allowing the network to learn and make intelligent decisions on its own.
+In these notes, you will find a collection of my thoughts and musings as I delve into the world of deep learning."
+homepage = "http://carlosimoes.github.io/DeepNotes.github.io/"
+tags = [
+  "responsive",
+  "simple",
+  "clean",
+  "light",
+  "dark",
+  "blog",
+  "minimalist",
+  "highlight.js",
+  "search"
+]
+features = [
+  "responsive",
+  "single-column",
+  "blog",
+  "cover-image",
+  "table-of-contents",
+  "opengraph",
+  "highlight.js",
+  "favicon",
+  "archive",
+  "share-icons",
+  "cover",
+  "multilingual",
+  "social-icons",
+  "minified-assets",
+  "theme-toggle",
+  "menu-location-indicator",
+  "scroll-to-top",
+  "search"
+]
+min_version = "0.83.0"
 
-[params]
-  title = "My Deep Notes"
-  author = "Carlos Simões"
-  description = "Welcome to my blog on deep learning! \n Deep learning is a subfield of machine learning that is inspired by the structure and function of the brain, specifically the neural networks that make up the brain. It involves training artificial neural networks on a large dataset, allowing the network to learn and make intelligent decisions on its own.\n In these notes, you will find a collection of my thoughts and musings as I delve into the world of deep learning."
+[author]
+  name = "Carlos Simões"
+  homepage = "http://carlosimoes.github.io/DeepNotes.github.io/"
