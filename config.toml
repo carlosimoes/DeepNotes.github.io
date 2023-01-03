@@ -34,13 +34,9 @@ min_version = "0.83.0"
 [params]
   [profileMode]
     enabled = true
-    title = "<Title>"
+    title = "Hello, I'm Carlos Simões"
     subtitle = "This is subtitle"
     imageUrl = "<image link>"
     imageTitle = "<title of image as alt>"
     imageWidth = 120
     imageHeight = 120
-    url = "/archive"
-
-      [[profileMode.buttons]]
-      name = "Archive"
