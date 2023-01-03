@@ -1,57 +1,84 @@
 # theme.toml template for a Hugo theme
 # See http://carlosimoes.github.io/DeepNotes.github.io/ for an example
 
-name = "PaperMod"
-homepage = "http://carlosimoes.github.io/DeepNotes.github.io/"
-tags = []
-features = [
-  "responsive",
-  "single-column",
-  "blog",
-  "cover-image",
-  "table-of-contents",
-  "opengraph",
-  "highlight.js",
-  "favicon",
-  "archive",
-  "share-icons",
-  "cover",
-  "multilingual",
-  "social-icons",
-  "minified-assets",
-  "theme-toggle",
-  "menu-location-indicator",
-  "scroll-to-top",
-  "search"
-]
-min_version = "0.83.0"
 
-[author]
-  name = "Carlos Simões"
-  homepage = "http://carlosimoes.github.io/DeepNotes.github.io/"
+baseURL = 'http://carlosimoes.github.io/DeepNotes.github.io/'
+languageCode = 'en-us'
+title = 'MissCoding Blog'
+metaDataFormat = "yaml"
+theme = "PaperMod"
 
+DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = true
+[languages]
+  [languages.en]
+    contentDir = "content/en" #English
+    weight = 1
+    languageName = "English"
+    [languages.en.params]
+      introTitle = "Hey! I'm Chelsea Suddens"
+      introSubtitle = "I love mobile dev!"
+      introPhoto = "me.jpg"
+    [[languages.en.menu.main]]
+        name = "Blog"
+        url = "blog"
+        weight = 1
 
-[params.profileMode]
-enabled = true
-title = "<Title>"
-subtitle = "This is subtitle"
-imageUrl = "<image link>"
-imageTitle = "<title of image as alt>"
-imageWidth = 120
-imageHeight = 120
+    [[languages.en.menu.main]]
+        name = "About"
+        url = "page/about/"
+        weight = 2
 
-  [[params.profileMode.buttons]]
-  name = "Archive"
-  url = "/archive"
+    [[languages.en.menu.main]]
+        name = "Tags"
+        url = "tags"
+        weight = 3
 
-  [[params.profileMode.buttons]]
-  name = "Github"
-  url = "https://github.com/"
+[params]
+  # Enable the darkmode toggle in header
+  darkModeToggle = true
+  
+  # Enable search in header
+  enableSearch = true
 
-[[params.socialIcons]]
-name = "<platform>"
-url = "<link>"
+  # Custom copyright - optional
+  copyright = "Copyright © 2021 - Chelsea Suddens · All rights reserved"
+  favicon = "/favicon.svg"
 
-[[params.socialIcons]]
-name = "<platform 2>"
-url = "<link2>"
+  # Color for the intro details and social links block, not applicable for dark mode
+  # Supported values: Any color from TailwindCSS default colors
+  # Reference: https://tailwindcss.com/docs/customizing-colors
+  ascentColor = "bg-blue-100"
+
+  # The page bundle that is shown on the front page
+  frontBundle = "blog"
+
+[params.homepage.social]
+  # Global params xommon for both languages
+  title = "Follow me"
+  description = "I work on everything coding and tweet developer memes"
+  twitter = "https://twitter.com/"
+  linkedin = "https://linkedin.com/in/"
+  xing = "https://www.xing.com/profile/"
+  github = "https://github.com/"
+  medium = "https://medium.com/"
+  reddit = "https://reddit.com/"
+  dribbble = "https://dribbble.com/"
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
