@@ -32,25 +32,15 @@ min_version = "0.83.0"
 
 
 [params]
-    profileMode = [
-        enabled = true
-        title = "My Deep Notes" # optional default will be site title
-        subtitle = "Welcome to my blog on deep learning!
-Deep learning is a subfield of machine learning that is inspired by the structure and function of the brain, specifically the neural networks that make up the brain. It involves training artificial neural networks on a large dataset, allowing the network to learn and make intelligent decisions on its own.
-In these notes, you will find a collection of my thoughts and musings as I delve into the world of deep learning."
-        imageUrl = "<image link>" # optional
-        imageTitle = "<title of image as alt>" # optional
-        imageWidth = 120 # custom size
-        imageHeight = 120 # custom size
-        buttons =
-            - name= Archive
-            url= "/archive"
-            - name= Github
-            url= "https://github.com/"
-      ]
+  [profileMode]
+    enabled = true
+    title = "<Title>"
+    subtitle = "This is subtitle"
+    imageUrl = "<image link>"
+    imageTitle = "<title of image as alt>"
+    imageWidth = 120
+    imageHeight = 120
+    url = "/archive"
 
-    socialIcons: # optional
-        - name: "<platform>"
-            url: "<link>"
-        - name: "<platform 2>"
-            url: "<link2>"
+      [[profileMode.buttons]]
+      name = "Archive"
