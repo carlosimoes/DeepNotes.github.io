@@ -1,0 +1,10 @@
+baseURL = 'http://DeepNotes.github.io/'
+languageCode = 'en-us'
+title = 'My Deep Notes'
+theme = 'PaperMod'
+
+
+[params]
+  title = "My Deep Notes"
+  author = "Carlos Simões"
+  description = "Welcome to my blog on deep learning! \n Deep learning is a subfield of machine learning that is inspired by the structure and function of the brain, specifically the neural networks that make up the brain. It involves training artificial neural networks on a large dataset, allowing the network to learn and make intelligent decisions on its own.\n In these notes, you will find a collection of my thoughts and musings as I delve into the world of deep learning."
