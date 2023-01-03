@@ -1,4 +1,4 @@
-baseURL = 'http://deepnotes.com/'
+baseURL = 'http://www.deepnotes.com/'
 languageCode = 'en-us'
 title = 'My Deep Notes'
 theme = 'PaperMod'
